@@ -5,6 +5,20 @@
 The example projects demonstrates how to use Spring Boot in combination with Liquibase to manage database change sets.
 This application can run as part of a build process or as an executable jar.
 
+## Postgres Docker Container
+
+This Command is used postgre database via docker container
+
+```
+docker run \
+	--name postgres-db \
+	-e POSTGRES_PASSWORD=test_db \
+	-e POSTGRES_USER=test_db \
+	-e POSTGRES_DB=test_db \
+	-p 5432:5432 \
+	-d postgres
+```
+
 ## Running as a Maven Build
 
 This can be helpful as part of your build process during development. Doing a Maven compile with the liquibase profile
@@ -38,7 +52,7 @@ java -jar spring-boot-liquibase-1.0-SNAPSHOT.jar --dbUrl=[dbUrl] --dbUser=[dbUse
 For example:
 
 ```
-java -jar target/spring-boot-liquibase-1.0-SNAPSHOT.jar --dbUrl=jdbc:postgresql://localhost:5432/test-db --dbUser=postgres --dbPwd=admin --dropFirst=true
+java -jar target/spring-boot-liquibase-1.0-SNAPSHOT.jar --dbUrl=jdbc:postgresql://localhost:5432/test_db --dbUser=postgres --dbPwd=admin --dropFirst=true
 ```
 
 ## Database Change Log Tables
