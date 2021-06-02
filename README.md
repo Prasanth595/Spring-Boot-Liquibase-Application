@@ -1,5 +1,5 @@
 # Spring Boot Liquibase Application
-
+[![Java CI with Maven](https://github.com/prasanth595/Spring-Boot-Liquibase-Application/actions/workflows/maven.yml/badge.svg)](https://github.com/prasanth595/Spring-Boot-Liquibase-Application/actions/workflows/maven.yml)
 ## Background
 
 The example projects demonstrates how to use Spring Boot in combination with Liquibase to manage database change sets.
