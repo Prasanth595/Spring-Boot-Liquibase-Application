@@ -12,5 +12,5 @@ jobs:
     steps:
     - uses: bcanseco/github-contribution-graph-action@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PRASANTH_TOKEN }}
         GIT_EMAIL: prasanth956607@gmail.com
